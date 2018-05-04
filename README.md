@@ -39,6 +39,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Specs
 This project is an exercise in using components to create and display block elements of a website, such as an input field or an image header. It should have 5 components where a user can interact with or edit a section.
 
+_*User Story:*_
+1. The user should be able to select types of projects to see information displayed about them.
+2. The user should be able to fill out a form and have their profile information recorded.
+3. The user should be able to adjust their search parameters to return a more specific response.
+
 | Component | Content | Purpose |
 | :--------- | :---------- | :---------- |
 | app.component.ts | Master list of projects, forms, contests, and categories | To contain the master project list, master sign-up form list, master contest list, and master category list of the site, and produce directory with filters (pipe), and be the crossroads of all other components |

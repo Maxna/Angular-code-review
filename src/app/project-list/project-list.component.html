@@ -1,0 +1,9 @@
+<div style="text-align:center">
+  <h1>
+    {{ projectHeader }}!
+  </h1>
+</div>
+<ul>
+  <li *ngFor="let currentProject of childProjectList">{{currentProject.projectType}}</li>
+</ul>
+<!-- <button (click)="editTask(currentTask)">Edit!</button> -->

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
+import { Project } from './models/freelance.model';
 
 @Component({
   selector: 'app-root',
@@ -8,22 +9,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Freelancers';
   header: string = "Hire Freelancers Online";
-  masterCategoryList: Category[] = [
-    new Category("Directory", "Showcase", "Community", "Categories"),
-  ];
+  // masterCategoryList: Category[] = [
+  //   new Category("Directory", "Showcase", "Community", "Categories"),
+  // ];
 
 
   masterProjectList: Project[] = [
-    new Project("Website Development", "Starting at $99/hr", 4),
+    new Project("Website Development", "Starting at $99/hr", 4)
   ];
-
-
-  masterContestList: Contest[] = [
-    new Contest("Logo Design", "Starting at $149/hr", 3),
-  ];
-
-
-  masterFormList: Form[] = [
-    new Form("Contest", "Project", "Local", "Login"),
-  ];
+  //
+  //
+  // masterContestList: Contest[] = [
+  //   new Contest("Logo Design", "Starting at $149/hr", 3),
+  // ];
+  //
+  //
+  // masterFormList: Form[] = [
+  //   new Form("Contest", "Project", "Local", "Login"),
+  // ];
 }
