@@ -50,6 +50,7 @@ _*User Story:*_
 | project-list.component.ts | Child list of popular projects, clicked function emitter, (location priority??) | To contain a child of the project list, and to return information on clicks (and location??) to app.component.js |
 | contest-list.component.ts |  contests, clicked function emitter, (location priority??) | To contain a child of the project list, and to return information on clicks (and location??) to app.component.js |
 | form-list.component.ts |  Stores all types of forms and sign-up sheets | To contain child lists of all forms a user can edit, returns information to app.component.js |
+| Pipe | Should move project types between arrays | "incomplete" = contests --> "complete" = projects |
 
 
 

@@ -7,6 +7,19 @@ import { Project } from '../models/freelance.model';
   styleUrls: ['./project-list.component.css']
 })
 export class ProjectListComponent {
-  projectHeader: string = "Hello";
   @Input() childProjectList: Project[];
+  @Output() sendClick = new EventEmitter();
+
+  projectHeader: string = "Hello";
+
+  selectButtonClicked(projectToEdit: Project){
+    this.sendClick.emit(projectToEdit);
+  }
+  typeColor(currentProject){
+    if (currentProject.type === "Project"){
+      return "bg-success";
+    } else {
+      return "bg-danger";
+    }
+  }
 }

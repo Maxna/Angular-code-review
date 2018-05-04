@@ -7,4 +7,4 @@
 <!-- <ul>
   <li></li>
 </ul> -->
-<app-project-list [childProjectList]="masterProjectList"></app-project-list>
+<app-project-list [childProjectList]="masterProjectList" (sendClick)="selectedProject($event)"></app-project-list>

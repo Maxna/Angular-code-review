@@ -19,4 +19,13 @@ export class AppComponent {
     new Project("Logo Design", "Contest", "Starting from $150/hr"),
     new Project("Data Entry", "Project", "Starting from $550/hr")
   ];
+
+  selectedProject(clickedProject) {
+    this.selectedProject = clickedProject;
+    if(clickedProject.type === "Project"){
+      alert("It is a Project!");
+    } else if(clickedProject.type === "Contest"){
+      alert("It is a Contest!");
+    }
+  }
 }
