@@ -41,9 +41,11 @@ This project is an exercise in using components to create and display block elem
 
 | Component | Content | Purpose |
 | :--------- | :---------- | :---------- |
-| app.component.ts | Master list of popular projects | To contain the Master Class of the site, and be the crossroads of all other components |
+| app.component.ts | Master list of projects, forms, contests, and categories | To contain the master project list, master sign-up form list, master contest list, and master category list of the site, and produce directory with filters (pipe), and be the crossroads of all other components |
 | project-list.component.ts | Child list of popular projects, clicked function emitter, (location priority??) | To contain a child of the project list, and to return information on clicks (and location??) to app.component.js |
-| project-categories.component.ts | child list of projects by category | To contain the child list of projects sorted by category (location??), and produce directory with filters (pipe) |
+| contest-list.component.ts |  contests, clicked function emitter, (location priority??) | To contain a child of the project list, and to return information on clicks (and location??) to app.component.js |
+| form-list.component.ts |  Stores all types of forms and sign-up sheets | To contain child lists of all forms a user can edit, returns information to app.component.js |
+
 
 
 #### Link
