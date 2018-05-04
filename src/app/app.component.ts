@@ -9,22 +9,8 @@ import { Project } from './models/freelance.model';
 export class AppComponent {
   title = 'Freelancers';
   header: string = "Hire Freelancers Online";
-  // masterCategoryList: Category[] = [
-  //   new Category("Directory", "Showcase", "Community", "Categories"),
-  // ];
-
-
   masterProjectList: Project[] = [
-    new Project("Website Development", "Starting at $99/hr", 4)
+    new Project("Website Development", "Project", "Starting at $99/hr")
+    new Project("Logo Design", "Contest", "Starting at $149/hr")
   ];
-  //
-  //
-  // masterContestList: Contest[] = [
-  //   new Contest("Logo Design", "Starting at $149/hr", 3),
-  // ];
-  //
-  //
-  // masterFormList: Form[] = [
-  //   new Form("Contest", "Project", "Local", "Login"),
-  // ];
 }
