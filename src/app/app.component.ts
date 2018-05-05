@@ -10,22 +10,22 @@ export class AppComponent {
   title = 'Freelancers';
   header: string = "Hire Freelancers Online";
   masterProjectList: Project[] = [
-    new Project("Website Development", "Project", "Starting from $99/hr"),
-    new Project("Web Design", "Contest", "Starting from $90/hr"),
-    new Project("SEO Marketing", "Project", "Starting from $100/hr"),
-    new Project("Mobile App", "Project", "Starting from $200/hr"),
-    new Project("Article Writing", "Project", "Starting from $50/hr"),
-    new Project("Business Card", "Contest", "Starting from $30/hr"),
-    new Project("Logo Design", "Contest", "Starting from $150/hr"),
-    new Project("Data Entry", "Project", "Starting from $550/hr")
+    new Project("Website Development", "Project", "Starting from $99/hr", 0, 2),
+    new Project("Web Design", "Contest", "Starting from $90/hr", 0, 2),
+    new Project("SEO Marketing", "Project", "Starting from $100/hr", 0, 2),
+    new Project("Mobile App", "Project", "Starting from $200/hr", 0, 2),
+    new Project("Article Writing", "Project", "Starting from $50/hr", 0, 2),
+    new Project("Business Card", "Contest", "Starting from $30/hr", 0, 2),
+    new Project("Logo Design", "Contest", "Starting from $150/hr", 0, 2),
+    new Project("Data Entry", "Project", "Starting from $550/hr", 0, 2)
   ];
+  selectedProject = null;
 
-  selectedProject(clickedProject) {
+  hypeProject(clickedProject) {
     this.selectedProject = clickedProject;
-    if(clickedProject.type === "Project"){
-      alert("It is a Project!");
-    } else if(clickedProject.type === "Contest"){
-      alert("It is a Contest!");
+    clickedProject.intLevel += 1;
+    if(clickedProject.intLevel >= 5){
+      clickedProject.trend = 2;
     }
   }
 }

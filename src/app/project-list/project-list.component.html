@@ -1,6 +1,6 @@
 <div *ngFor="let currentProject of childProjectList">
-  <div class="projCards">
-    <div [class]="typeColor(currentProject)" >{{currentProject.description}}<br>{{currentProject.price}} {{currentProject.type}} <button (click)="selectButtonClicked(currentProject)">Post a  Like This</button>
+  <div class="card">
+    <div [class]="typeColor(currentProject)" >{{currentProject.description}}<br>{{currentProject.type}}<br>{{currentProject.price}}<br><br><button (click)="hypeButtonClicked(currentProject)">Post An Event Like This</button>
     </div>
   </div>
 </div>

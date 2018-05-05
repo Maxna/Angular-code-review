@@ -12,12 +12,14 @@ export class ProjectListComponent {
 
   projectHeader: string = "Hello";
 
-  selectButtonClicked(projectToEdit: Project){
+  hypeButtonClicked(projectToEdit: Project){
     this.sendClick.emit(projectToEdit);
   }
   typeColor(currentProject){
-    if (currentProject.type === "Project"){
+    if (currentProject.trend === 2){
       return "bg-success";
+    } else if(currentProject.trend === 1){
+      return "bg-warning";
     } else {
       return "bg-danger";
     }
