@@ -1,27 +1,41 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Project } from '../models/freelance.model';
+import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
-  styleUrls: ['./project-list.component.css']
+  styleUrls: ['./project-list.component.css'],
+  providers: [ProjectService]
 })
-export class ProjectListComponent {
-  @Input() childProjectList: Project[];
-  @Output() sendClick = new EventEmitter();
+export class ProjectListComponent implements OnInit {
+  projects: FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
 
-  projectHeader: string = "Hello";
+  // @Input() childProjectList: Project[];
+  // @Output() sendClick = new EventEmitter();
 
-  hypeButtonClicked(projectToEdit: Project){
-    this.sendClick.emit(projectToEdit);
+  constructor(
+    private router: Router,
+    private projectService: ProjectService
+  ) { }
+
+  ngOnInit(){
+    this.projects = this.projectService.getProjects();
   }
-  typeColor(currentProject){
-    if (currentProject.trend === 2){
-      return "bg-success";
-    } else if(currentProject.trend === 1){
-      return "bg-warning";
-    } else {
-      return "bg-danger";
-    }
+
+  // hypeButtonClicked(projectToEdit: Project){
+  //   this.sendClick.emit(projectToEdit);
   }
+  // typeColor(currentProject){
+  //   if (currentProject.trend === 2){
+  //     return "bg-success";
+  //   } else if(currentProject.trend === 1){
+  //     return "bg-warning";
+  //   } else {
+  //     return "bg-danger";
+  //   }
+  // }
 }
