@@ -1,0 +1,35 @@
+{
+  "projects": [{
+    "description": "Website Development",
+    "type": "Project",
+    "price": "Starting from $99/hr"
+   }, {
+    "description": "Web Design",
+    "type": "Contest",
+    "price": "Starting from $90/hr"
+   }, {
+    "description": "SEO Marketing",
+    "type": "Project",
+    "price": "Starting from $100/hr"
+   }, {
+    "description": "Mobile App",
+    "type": "Project",
+    "price": "Starting from $200/hr"
+  }, {
+    "description": "Article Writing",
+    "type": "Project",
+    "price": "Starting from $50/hr"
+  }, {
+    "description": "Business Card",
+    "type": "Contest",
+    "price": "Starting from $30/hr"
+  }, {
+    "description": "Logo Design",
+    "type": "Contest",
+    "price": "Starting from $150/hr"
+  }, {
+    "description": "Data Entry",
+    "type": "Project",
+    "price": "Starting from $550/hr"
+    }]
+}
