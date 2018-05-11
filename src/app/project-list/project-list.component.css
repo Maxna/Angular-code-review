@@ -1,14 +1,20 @@
-/*.card-body {
-  text-align: center;
-  border-style: solid;
-  border-width: thin;
-  margin: 5px;
-  padding: 5px;
-  max-width: 30%;
-  min-height: 100px;
-}*/
+@media (min-width: 36em) {
+  .card-columns {
+    column-count: 2;
+  }
+}
+@media (min-width: 48em) {
+  .card-columns {
+    column-count: 3;
+  }
+}
+@media (min-width: 62em) {
+  .card-columns {
+    column-count: 4;
+  }
+}
 
-.grid {
-  display: flex;
-  flex-flow: row wrap;
+.card {
+  min-height: 200px;
+
 }

@@ -1,13 +1,11 @@
-<div class="container-fluid">
+<div class="container">
   <h2>Projects List</h2><br>
-  <div class="row">
-    <div id="grid" class="col-md-3">
-      <div *ngFor="let project of projects | async" class="card card-default">
-        <div class="card-body">
-          <h5>{{project.description}}</h5>
-          <li>Environment: {{project.type}}</li>
-          <li>Compensation: {{project.price}}</li>
-        </div>
+  <div class="card-columns">
+    <div *ngFor="let project of projects | async" class="card bg-secondary">
+      <div class="card-body">
+        <h5>{{project.description}}</h5>
+        <li>Environment: {{project.type}}</li>
+        <li>Compensation: {{project.price}}</li>
       </div>
     </div>
   </div>
