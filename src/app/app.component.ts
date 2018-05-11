@@ -24,8 +24,10 @@ export class AppComponent {
   hypeProject(clickedProject) {
     this.selectedProject = clickedProject;
     clickedProject.intLevel += 1;
-    if(clickedProject.intLevel >= 5){
+    if(clickedProject.intLevel > 5){
       clickedProject.trend = 2;
+    } else if(clickedProject.intlevel > 1){
+      clickedProject.trend = 1;
     }
   }
 }
