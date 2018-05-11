@@ -9,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 
 })
 export class AppComponent implements OnInit{
-  title = 'Freelancers';
-  header: string = "Hire Freelancers Online";
+  title = 'Hire expert freelancers for any job, online';
+  logo: string = "Freelancer";
+  hire: string = "Hire Freelancers";
+  find: string = "Find Work";
+  workings: string = "How It Works";
+  admins: string = "You are the captain now";
+
 
 
   constructor() { }
@@ -18,14 +23,4 @@ export class AppComponent implements OnInit{
   ngOnInit(){
 
   }
-
-  // hypeProject(clickedProject) {
-  //   this.selectedProject = clickedProject;
-  //   clickedProject.intLevel += 1;
-  //   if(clickedProject.intLevel > 5){
-  //     clickedProject.trend = 2;
-  //   } else if(clickedProject.intlevel > 1){
-  //     clickedProject.trend = 1;
-  //   }
-  // }
 }

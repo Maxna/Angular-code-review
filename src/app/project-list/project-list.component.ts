@@ -23,4 +23,8 @@ export class ProjectListComponent implements OnInit {
   ngOnInit(){
     this.projects = this.projectService.getProjects();
     }
-  }
+
+  goToDetailPage(clickedProject) {
+    this.router.navigate(['projects', clickedProject.$key]);
+  };
+}
