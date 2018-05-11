@@ -10,12 +10,10 @@ import { ProjectService } from '../project.service';
   styleUrls: ['./project-list.component.css'],
   providers: [ProjectService]
 })
+
 export class ProjectListComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-
-  // @Input() childProjectList: Project[];
-  // @Output() sendClick = new EventEmitter();
 
   constructor(
     private router: Router,
@@ -24,18 +22,5 @@ export class ProjectListComponent implements OnInit {
 
   ngOnInit(){
     this.projects = this.projectService.getProjects();
+    }
   }
-
-  // hypeButtonClicked(projectToEdit: Project){
-  //   this.sendClick.emit(projectToEdit);
-  }
-  // typeColor(currentProject){
-  //   if (currentProject.trend === 2){
-  //     return "bg-success";
-  //   } else if(currentProject.trend === 1){
-  //     return "bg-warning";
-  //   } else {
-  //     return "bg-danger";
-  //   }
-  // }
-}

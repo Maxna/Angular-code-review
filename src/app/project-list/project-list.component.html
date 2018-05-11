@@ -1,6 +1,14 @@
-<div *ngFor="let currentProject of childProjectList">
-  <div class="card">
-    <div [class]="typeColor(currentProject)" >{{currentProject.description}}<br>{{currentProject.type}}<br>{{currentProject.price}}<br><br><button (click)="hypeButtonClicked(currentProject)">Post An Event Like This</button>
+<div class="container-fluid">
+  <h2>Projects List</h2><br>
+  <div class="row">
+    <div id="grid" class="col-md-3">
+      <div *ngFor="let project of projects | async" class="card card-default">
+        <div class="card-body">
+          <h5>{{project.description}}</h5>
+          <li>Environment: {{project.type}}</li>
+          <li>Compensation: {{project.price}}</li>
+        </div>
+      </div>
     </div>
   </div>
 </div>

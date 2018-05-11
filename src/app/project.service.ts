@@ -10,4 +10,12 @@ export class ProjectService {
     this.projects = database.list('projects');
   }
 
+  getProjects() {
+    return this.projects;
+  }
+
+  getProjectById(projectId: string) {
+    return this.database.object('/projects' + projectId);
+  }
+
 }

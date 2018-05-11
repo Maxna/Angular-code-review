@@ -1,11 +1,11 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {  } from './sample/sample.component';
+import { ProjectListComponent } from './project-list/project-list.component';
 
 const appRoutes: Routes = [
   {
   path: '',
-  component: SampleComponent
+  component: ProjectListComponent
   }
 ];
 
