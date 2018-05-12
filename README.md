@@ -4,13 +4,21 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
 
 ## Description
-This project is supposed to be a website modeled after https://www.freelancer.com/. Using Angular components, the app should have a similar look and functionality to the freelancer home page.
+This project is supposed to be a freelancing website pulling inspiration from https://www.freelancer.com/. Using Angular components, the app should have a similar look and functionality to the freelancer home page.
 
 ### Setup
 
-### Known Bugs
+Clone file to desktop
+Run npm install
+Register with Firebase
+Create a file to store apiKey, copy key from firebase to atom file
+Run Firebase deploy
 
 ### Technologies Used
+
+Node
+Angular
+bootstrap
 
 ### Development server
 
@@ -37,20 +45,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 # Specs
-This project is an exercise in using components to create and display block elements of a website, such as an input field or an image header. It should have 5 components where a user can interact with or edit a section.
+This project is an exercise in using components to create and display block elements of a website, such as an input field or an image header. It should eventually have 5 components where a user can interact with postings and create their own.
 
 _*User Story:*_
 1. The user should be able to select types of projects to see information displayed about them.
 2. The user should be able to fill out a form and have their profile information recorded.
 3. The user should be able to adjust their search parameters to return a more specific response.
+4. The user should be able to post a project of their own.
+5. The user should be able to log in and out of their unique account.
+6. The user should be able to edit previously posted projects.
+7. The user should be able to find jobs or freelancers in their area.  
 
-| Component | Content | Purpose |
-| :--------- | :---------- | :---------- |
-| app.component.ts | Master list of projects, forms, contests, and categories | To contain the master project list, master sign-up form list, master contest list, and master category list of the site, and produce directory with filters (pipe), and be the crossroads of all other components |
-| project-list.component.ts | Child list of popular projects, clicked function emitter, (location priority??) | To contain a child of the project list, and to return information on clicks (and location??) to app.component.js |
-| contest-list.component.ts |  contests, clicked function emitter, (location priority??) | To contain a child of the project list, and to return information on clicks (and location??) to app.component.js |
-| form-list.component.ts |  Stores all types of forms and sign-up sheets | To contain child lists of all forms a user can edit, returns information to app.component.js |
-| Pipe | Should move project types between arrays | "incomplete" = contests --> "complete" = projects |
 
 
 
