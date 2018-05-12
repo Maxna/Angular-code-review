@@ -14,7 +14,7 @@ export class AppComponent implements OnInit{
   hire: string = "Hire Freelancers";
   find: string = "Find Work";
   workings: string = "How It Works";
-  admins: string = "You are the captain now";
+
 
 
 
