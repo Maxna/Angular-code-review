@@ -2,14 +2,11 @@
   <h2>Crowd Favorites.</h2><br>
   <h2>Here are some of our most popular projects:</h2><br>
   <div class="card-columns">
-    <div *ngFor="let project of projects | async" class="card bg-secondary">
+    <div *ngFor="let project of projects | async" class="card bg-info">
       <div class="card-body">
         <h5 (click)="goToDetailPage(project)">{{project.description}}</h5>
         <li>Environment: {{project.type}}</li>
         <li>Compensation: {{project.price}}</li>
-        <div *ngIf="currentRoute === '/admin'">
-          <h1>{{admins}}</h1>
-        </div>
       </div>
     </div>
   </div>

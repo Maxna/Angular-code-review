@@ -8,7 +8,7 @@ const appRoutes: Routes = [
   path: '',
   component: ProjectListComponent
 }, {
-    path: 'project-details',
+    path: 'details/:id',
     component: ProjectDetailsComponent
   }
 ];
